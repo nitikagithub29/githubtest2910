@@ -10,9 +10,9 @@ import java.util.List;
 @Service
 public class ItemService {
 
-    public List<Item> fetchItemsFromUrl(String url) {
+    public List<Item> fetchItemsFromUrl(String urlString) {
         RestTemplate restTemplate3 = new RestTemplate();
-        Item[] itemsList = restTemplate3.getForObject(url, Item[].class);
+        Item[] itemsList = restTemplate3.getForObject(urlString, Item[].class);
         return Arrays.asList(itemsList);
     }
 }
