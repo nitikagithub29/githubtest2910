@@ -11,8 +11,8 @@ import java.util.List;
 public class ItemService {
 
     public List<Item> fetchItemsFromUrl(String url) {
-        RestTemplate restTemplate2 = new RestTemplate();
-        Item[] items = restTemplate2.getForObject(url, Item[].class);
+        RestTemplate restTemplate3 = new RestTemplate();
+        Item[] items = restTemplate3.getForObject(url, Item[].class);
         return Arrays.asList(items);
     }
 }
